@@ -1,0 +1,25 @@
+{
+  "name": "doubly-linked-list",
+  "version": "0.0.1",
+  "description": "Simple Doubly Linked List structure for JavaScript",
+  "main": "dist/index.js",
+  "types": [
+    "node"
+  ],
+  "scripts": {
+    "lint": "tslint -c ./.tslint.json src/*.ts",
+    "prebuild": "npm run clean",
+    "build": "tsc -p .",
+    "watch": "tsc -w -p .",
+    "clean": "rm -rf dist/*",
+    "postinstall": "npm run build"
+  },
+  "keywords": [],
+  "author": "kazu69",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^9.4.0",
+    "tslint": "^5.9.1",
+    "typescript": "^2.6.2"
+  }
+}
